@@ -1,0 +1,28 @@
+<div>
+   <p>Template Form</p>
+    <div class="m-2">
+        search:  <input type="text" class="formcontrol" [(ngModel)] = "searchtext" />
+        
+        <button    class="btn btn-sm  m-2 btn-info" (click) = "search(searchtext)">search</button>
+        
+    </div>
+
+
+
+    <div class="m-2">
+        Name :  <input type="text" class="formcontrol" [(ngModel)] = "name" />
+        
+    </div>
+    <div class="m-2" *ngIf = "flag">
+        Id:  <input type="number"   [disabled]="flag" class="formcontrol" [(ngModel)]= "Id"/>
+        
+    </div>
+    <div class="m-2">
+         <button *ngIf = "!flag" class="btn btn-sm  m-2 btn-info" (click)= "contentAdd(name, Id)">Add</button>
+
+         <button *ngIf = "flag"  class="btn btn-sm  m-2 btn-info" (click)= "contentAdd(name, Id)">update</button>
+
+         <button class="btn btn-sm  m-2 btn-info" (click) = "reset()">cancel</button>
+         <button class="btn btn-sm  m-2 btn-info" (click)="DeleteUser(searchtext)">Delete </button>
+     </div>
+</div>

@@ -1,0 +1,58 @@
+
+<div>
+    <p>Angular Form</p>
+
+    <div class="m-2">
+        search:  <input type="text" class="formcontrol" [(ngModel)] = "searchtext" />
+        
+        <button    class="btn btn-sm  m-2 btn-info" (click) = "search(searchtext)">search</button>
+        
+    </div>
+
+<form [formGroup]="form" (ngSubmit) = "Add(form.value)">
+  first number :<input type ="text" class = "formcontrol" formControlName="name"  
+
+</form>
+<form [formGroup]="form"  (ngSubmit)="contentAdd(form.value)">
+    <div class="m-2">
+        Name :  <input type="text" class="formcontrol"  formControlName="name" />
+        
+    </div>
+    <div class="m-2" *ngIf = "flag">
+        Id:  <input type="number"   [disabled]="flag" class="formcontrol"  formControlName="id"/>
+        
+    </div>
+    <div class="m-2">
+         <button type= "submit " *ngIf = "!flag" class="btn btn-sm  m-2 btn-info" >Add</button>
+
+         <button type= "submit " *ngIf = "flag"  class="btn btn-sm  m-2 btn-info" >update</button>
+
+         <button class="btn btn-sm  m-2 btn-info" (click) = "reset()">cancel</button>
+         <button class="btn btn-sm  m-2 btn-info" (click)="DeleteUser(searchtext)">Delete </button>
+     </div>
+</form>
+    
+</div>
+
+
+<section class="sample-app-content">
+    <h1>Reactive Form Example:</h1>
+    <form [formGroup]="form2" (ngSubmit)="submitMe()" >
+        <p>
+            <label>First Name:</label>
+            <input type="text" formControlName="firstName">
+        </p>
+        <p>
+            <label>Password:</label>
+            <input type="password" formControlName="password">
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{{form2.value | json}}
+</section> 
+
+
+
+

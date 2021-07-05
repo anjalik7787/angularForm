@@ -1,0 +1,86 @@
+{
+  "posts": [
+    {
+      "name": "qqqq",
+      "id": 1
+    },
+    {
+      "name": "rani",
+      "id": 4
+    },
+    {
+      "name": "vikrant",
+      "id": 2
+    },
+    {
+      "name": "hhhh",
+      "id": 6
+    },
+    {
+      "name": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "id": 8
+    },
+    {
+      "name": "rina",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "name": "sina"
+    },
+    {
+      "id": 11,
+      "name": "sina"
+    },
+    {
+      "id": 12,
+      "name": "anjali"
+    },
+    {
+      "id": 13,
+      "name": "anjali"
+    },
+    {
+      "id": 14,
+      "name": "anj"
+    },
+    {
+      "id": 15,
+      "name": "biba"
+    },
+    {
+      "id": 16,
+      "name": "monaliks"
+    },
+    {
+      "id": 17,
+      "name": "sinha"
+    },
+    {
+      "id": 18,
+      "name": "megha"
+    },
+    {
+      "id": 19,
+      "name": null
+    },
+    {
+      "id": 20,
+      "name": "neha"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
